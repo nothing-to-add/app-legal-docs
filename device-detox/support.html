@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Device Detox</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2d3748;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #4a5568;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .support-card {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .contact-method {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .version-info {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            color: #4a5568;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← Back to Apps</a>
+
+        <h1>Support - Device Detox</h1>
+
+        <div class="version-info">
+            <strong>Current Version:</strong> 1.0 (In Development) &nbsp;|&nbsp;
+            <strong>iOS Compatibility:</strong> iOS 17+ &nbsp;|&nbsp;
+            <strong>Last Updated:</strong> April 17, 2026
+        </div>
+
+        <h2>📧 Contact Support</h2>
+        <div class="contact-method">
+            <p><strong>Email Support:</strong> <a href="mailto:nothing-to-add@outlook.com">nothing-to-add@outlook.com</a><br>
+            <em>(Subject: Device Detox App Support)</em></p>
+            <p>We typically respond within 24–48 hours.</p>
+        </div>
+
+        <h2>📱 Getting Started</h2>
+        <p>New to Device Detox? Here's how to get started:</p>
+        <ol>
+            <li><strong>Grant Screen Time permission</strong> — Device Detox will ask on first launch; this allows it to apply voluntary app limits during your sessions</li>
+            <li><strong>Select apps to limit</strong> — choose individual apps or entire categories you want to stay away from during your session</li>
+            <li><strong>Configure your session</strong> — pick a duration and a commitment tier (the price you'll pay if you want to exit early)</li>
+            <li><strong>Start your session</strong> — the countdown begins and your selected apps will show a focus screen</li>
+            <li><strong>Complete your session</strong> — when the timer ends, all limits are automatically removed</li>
+        </ol>
+
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="support-card">
+            <div class="faq-item">
+                <div class="faq-question">Q: Is my data private and secure?</div>
+                <p>A: Yes. Session history (duration, completion status, streak data) is stored locally on your device using Apple's SwiftData framework. If you are signed into iCloud, it may sync across your devices via your personal iCloud account. We never transmit data to our own servers and have zero access to your information.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What apps can I limit?</div>
+                <p>A: You can limit any app installed on your device, as well as entire app categories (e.g. Social, Games, Entertainment) and web domains in Safari. The specific apps you choose are never stored or transmitted — only the count is recorded for your session summary.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How does the early exit work?</div>
+                <p>A: When you configure a session, you select a commitment tier (a price you're willing to pay to exit early). If you tap "End early" during a session, you'll be shown the price and an Apple payment sheet. Completing the purchase ends your session immediately. If you cancel the purchase, the session continues.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What if I don't want to pay to exit early?</div>
+                <p>A: You can configure a session without an early-exit option. Alternatively, you can always revoke Screen Time permission in iOS Settings → Screen Time, which will remove Device Detox's ability to limit apps (though we encourage committing to your session!).</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Why does Device Detox require a physical device?</div>
+                <p>A: Apple's Screen Time API (which powers the app limiting feature) does not function in the iOS Simulator. Device Detox must be run on a real iPhone running iOS 17 or later.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: The app limits didn't turn off after my session ended — what do I do?</div>
+                <p>A: This is rare but can happen if iOS prevents the app from running in the background. Simply open the Device Detox app — it checks for expired sessions every time it becomes active and will immediately remove any stale limits. If the issue persists, contact support.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Can I use Device Detox on iPad?</div>
+                <p>A: Device Detox is currently optimised for iPhone. iPad support may be added in a future update.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: Does Device Detox sync across devices?</div>
+                <p>A: Session history (streaks, completed sessions) syncs via iCloud if you are signed in. Your active session and app selection are device-specific.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: How do I request a refund for an early-exit purchase?</div>
+                <p>A: All purchases are processed by Apple. Please request a refund directly through Apple Support at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> or via the App Store → your Apple ID → Purchase History.</p>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Q: What iOS version do I need?</div>
+                <p>A: Device Detox requires iOS 17.0 or later.</p>
+            </div>
+        </div>
+
+        <h2>🐛 Report a Bug</h2>
+        <p>Found a bug? Help us improve:</p>
+        <ol>
+            <li>Email us at <a href="mailto:nothing-to-add@outlook.com">nothing-to-add@outlook.com</a> with subject: <strong>Device Detox Bug Report</strong></li>
+            <li>Include your iOS version and iPhone model</li>
+            <li>Describe what you were doing when the issue occurred</li>
+            <li>If the bug involves session limits not being applied or removed, include whether you are using a development or App Store build</li>
+            <li>Screenshots or screen recordings are very helpful</li>
+        </ol>
+
+        <h2>💡 Feature Requests</h2>
+        <p>Have ideas for new features? We'd love to hear them!</p>
+        <p>Send your suggestions to: <a href="mailto:nothing-to-add@outlook.com">nothing-to-add@outlook.com</a><br>
+        <em>(Subject: Device Detox Feature Request)</em></p>
+        <p>Planned features on the roadmap include:</p>
+        <ul>
+            <li>Apple Watch companion app for quick session start and progress glance</li>
+            <li>Apple Health integration for correlating focus time with health data</li>
+            <li>Advanced session analytics and weekly reports</li>
+            <li>Shortcuts app integration for automating session start</li>
+        </ul>
+
+        <h2>🔒 Privacy &amp; Screen Time</h2>
+        <p>For privacy-related questions, please review our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        <p>Device Detox uses Apple's Screen Time API under Apple's Family Controls entitlement. All app restrictions are voluntary and user-initiated. You can revoke Screen Time permission at any time in <strong>iOS Settings → Screen Time → [your name]</strong> or by deleting the app.</p>
+
+        <h2>⚖️ Legal</h2>
+        <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+
+        <p><em>Thank you for using Device Detox. We're here to help!</em></p>
+    </div>
+</body>
+</html>
